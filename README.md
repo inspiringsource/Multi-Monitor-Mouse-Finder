@@ -3,7 +3,7 @@
 This is a minimal Windows utility that helps you locate your mouse cursor—especially handy when working with multiple monitors.
 
 > **Note:**  
-> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when I press the CTRL key” in Mouse Settings).  
+> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
 > For most users, that’s more than enough.
 
 ---

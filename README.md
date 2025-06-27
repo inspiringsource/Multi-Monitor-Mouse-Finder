@@ -21,8 +21,8 @@ If you use several monitors and sometimes lose track of your mouse pointer this 
 
 ## Download
 
-- [Installer (EXE)](https://...)  
-- [Source Code (GitHub)](https://...)
+- [Installer (EXE)](https://github.com/inspiringsource/Cursor-track-find/releases/download/v1.0.0/Cursor.Track.and.find-Setup.exe)  
+- [Source Code (GitHub)](https://github.com/inspiringsource/Cursor-track-find/archive/refs/tags/v1.0.0.zip)
 
 ## Philosophy
 

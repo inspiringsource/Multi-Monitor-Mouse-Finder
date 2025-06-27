@@ -8,7 +8,7 @@ This is a minimal Windows utility that helps you locate your mouse cursor—espe
 
 ## Why use this?
 
-If you use several monitors and sometimes lose track of your mouse pointer.
+If you use several monitors and sometimes lose track of your mouse pointer this app can help!
 
 ## Features
 
@@ -27,7 +27,7 @@ If you use several monitors and sometimes lose track of your mouse pointer.
 ## Philosophy
 
 The primary goal of this project is to keep everything as simple, efficient, and “native” as possible—both for performance and reliability.  
-No unnecessary code, no custom icons, no bloat.
+No unnecessary code, no custom icons, no bloat!
 
 ## License
 

@@ -34,8 +34,7 @@ It displays subtle overlay arrows at the screen edge to make the cursor position
 
 ## Known Limitations
 
-- The “always on top” behavior and the overlay may not stay above all other windows (for example with full-screen apps). I might have a solution for this in the future.
-
+- The “always on top” behavior and the overlay may not stay above all other windows (for example with full-screen apps). 
 ---
 
 ## Download

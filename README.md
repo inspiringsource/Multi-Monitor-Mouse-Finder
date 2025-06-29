@@ -3,14 +3,14 @@
 This is a minimal Windows utility that helps you locate your mouse cursor—especially handy when working with multiple monitors.
 
 > **Note:**  
-> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
-> For most users, that’s more than enough.
+> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Properties).  
+> I recenntly found PowerToys, check out [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
 
 ---
 
-## Supported Platforms
-
-- **Windows 10 and Windows 11** should work fine.
+> **Note:**  
+> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
+> I recently found PowerToys — check out [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
 
 ---
 
@@ -46,7 +46,7 @@ It displays subtle overlay arrows at the screen edge to make the cursor position
 
 ## Philosophy
 
-The primary goal of this project is to keep everything as simple, efficient, and “native” as possible—both for performance and reliability.  
+The primary goal of this project is to keep everything as simple, efficient, and “native” as possible, both for performance and reliability.  
 No unnecessary code, no custom icons, no bloat!
 
 ---

@@ -1,12 +1,7 @@
 # Cursor Find and Track
 
-This is a minimal Windows utility that helps you locate your mouse cursor—especially handy when working with multiple monitors.
+This is a minimal Windows utility that helps you locate your mouse cursor, especially handy when working with multiple monitors.
 
-> **Note:**  
-> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Properties).  
-> I recenntly found PowerToys, check out [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
-
----
 
 > **Note:**  
 > Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  

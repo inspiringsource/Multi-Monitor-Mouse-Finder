@@ -1,6 +1,6 @@
 # Cursor Find and Track
 
-This is a minimal Windows utility that helps you locate your mouse cursor—especially handy when working with multiple monitors.
+This is a minimal Windows utility that helps you locate your mouse cursor. Especially handy when working with multiple monitors.
 
 > **Note:**  
 > Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
@@ -12,7 +12,7 @@ This is a minimal Windows utility that helps you locate your mouse cursor—espe
 ## Why use this?
 
 If you want a lightweight tool that always points to your mouse cursor across multiple screens this app is for you.  
-It displays subtle overlay arrows at the screen edge to keep your cursor instantly visible.
+It displays subtle overlay arrows at the screen edge to keep your cursor instantly and continuously visible.
 
 ---
 

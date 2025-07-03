@@ -1,35 +1,40 @@
 # Cursor Find and Track
 
-This is a minimal Windows utility that helps you locate your mouse cursor. Especially handy when working with multiple monitors.
+A minimal Windows utility to help you **find your mouse cursor quickly and easily—especially in multi-monitor setups**.
 
 > **Note:**  
-> Windows already has a built-in way to locate your mouse (such as “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
-> If performance is not a concern for you, try PowerToys — it offers powerful mouse utilities.  
-> Check out [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
+> Windows has a built-in way to find your mouse (like “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
+> If you don’t mind higher system usage and want more visual effects, you can also try [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
 
 ---
 
 ## Why use this?
 
-If you want a lightweight tool that always points to your mouse cursor across multiple screens this app is for you.  
-It displays subtle overlay arrows at the screen edge to keep your cursor instantly and continuously visible.
+Most built-in and third-party solutions either:
+- Aren’t effective when using multiple screens
+- Or use more system resources than necessary
+
+**Cursor Find and Track** offers an ultra-lightweight, always-on approach:  
+Subtle overlay arrows at the screen edges always point to your cursor’s position—across all your monitors—so you can find it instantly and continuously.
 
 ---
 
 ## Features
 
-- **Native C code:** No frameworks, no dependencies—just pure Win32 API.
-- **Extremely lightweight:** Minimal memory and CPU usage.
-- **No extra resources:** No bundled icons or graphics, uses Windows defaults.
-- **Background process:** No window, only a tray icon (shows the standard Windows app icon).
-- **Open source:** Code is available for review or improvement.
-- **Installer included:** Simple installation and autostart.
+- **Designed for multiple monitors:** Works seamlessly across all your screens
+- **Native C code:** No frameworks or dependencies—just pure Win32 API
+- **Extremely lightweight:** Minimal memory and CPU usage
+- **No extra resources:** Uses Windows defaults, no bundled graphics
+- **Background process:** No visible window, just a tray icon (standard Windows icon)
+- **Open source:** Code available for review or improvement
+- **Installer included:** Simple installation and autostart
 
 ---
 
 ## Known Limitations
 
-- The “always on top” behavior and the overlay may not stay above all other windows (for example with full-screen apps). 
+- The “always on top” overlay may not stay above all windows (such as full-screen apps)
+
 ---
 
 ## Download
@@ -39,17 +44,9 @@ It displays subtle overlay arrows at the screen edge to keep your cursor instant
 
 ---
 
-## Philosophy
-
-The primary goal of this project is to keep everything as simple, efficient, and “native” as possible, both for performance and reliability.  
-No unnecessary code, no custom icons, no bloat!
-
----
-
 ## License
 
 MIT License
 
 ---
 
-**Feedback and suggestions are welcome!**

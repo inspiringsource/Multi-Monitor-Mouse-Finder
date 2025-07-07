@@ -18,7 +18,7 @@ Most built-in and third-party solutions either:
 **Cursor Find and Track** offers an ultra-lightweight, always-on approach:  
 Subtle overlay arrows at the screen edges always point to your cursor’s position—across all your monitors—so you can find it instantly and continuously.
 
-![Demo](demo\Cursor_Find_and_Track_demo.gif)
+![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
 ---
 

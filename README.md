@@ -36,7 +36,7 @@ Subtle overlay arrows at the screen edges always point to your cursor’s positi
 
 ## Known Limitations
 
-- The “always on top” overlay may not stay above all windows (such as full-screen apps)
+- In some cases, such as when using full-screen applications, the overlay may not remain on top.
 - Because this app is new and unsigned, Windows may warn you when installing. You can safely choose ‘More info’ and then ‘Run anyway.’
 
 ---

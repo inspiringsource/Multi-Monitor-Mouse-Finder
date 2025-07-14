@@ -1,4 +1,6 @@
-# Cursor Find and Track
+# Multi-Monitor Mouse Finder
+
+* **Name Change:** This project, formerly known as "Cursor-track-find," has been renamed to **Multi-Monitor Mouse Finder**. This new name more accurately reflects the app's primary purpose. The name change will be fully implemented with the next release.
 
 A minimal Windows utility to help you **find your mouse cursor quickly and easily—especially in multi-monitor setups**.
 

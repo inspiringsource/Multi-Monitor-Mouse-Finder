@@ -19,6 +19,9 @@ HWND g_hwndTray = NULL;
 
 // --- Left (Vertical) Overlay ---
 int g_mouseY = 0;
+static HBRUSH g_redBrush = NULL;
+static HBRUSH g_blueBrush = NULL;
+static HBRUSH g_blackBrush = NULL;
 
 void DrawLeftArrow(HDC hdc, int arrowY)
 {
@@ -27,11 +30,11 @@ void DrawLeftArrow(HDC hdc, int arrowY)
     pts[1].x = 5;                  pts[1].y = arrowY + ARROW_HEIGHT;
     pts[2].x = 5 + ARROW_WIDTH;    pts[2].y = arrowY + ARROW_HEIGHT / 2;
 
-    HBRUSH hBrush = CreateSolidBrush(RGB(255, 0, 0));
-    HGDIOBJ oldBrush = SelectObject(hdc, hBrush);
+    // Use cached brush instead of creating/destroying each time
+    if (!g_redBrush) g_redBrush = CreateSolidBrush(RGB(255, 0, 0));
+    HGDIOBJ oldBrush = SelectObject(hdc, g_redBrush);
     Polygon(hdc, pts, 3);
     SelectObject(hdc, oldBrush);
-    DeleteObject(hBrush);
 }
 
 LRESULT CALLBACK LeftWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
@@ -41,7 +44,7 @@ LRESULT CALLBACK LeftWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
     {
         case WM_CREATE:
             scrH = GetSystemMetrics(SM_CYSCREEN); // primary monitor height
-            SetTimer(hwnd, 1, 33, NULL); // approx 30 FPS
+            SetTimer(hwnd, 1, 50, NULL); // 20 FPS - reduced from 30 FPS for efficiency
             break;
         case WM_TIMER:
         {
@@ -53,7 +56,8 @@ LRESULT CALLBACK LeftWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                 int new_mouseY = p.y - rc.top - arrowHeight / 2;
                 if (new_mouseY < 0) new_mouseY = 0;
                 if (new_mouseY > scrH - arrowHeight) new_mouseY = scrH - arrowHeight;
-                if (new_mouseY != g_mouseY) {
+                // Only update if position changed by at least 2 pixels to reduce redraws
+                if (abs(new_mouseY - g_mouseY) > 1) {
                     g_mouseY = new_mouseY;
                     InvalidateRect(hwnd, NULL, FALSE);
                 }
@@ -66,9 +70,9 @@ LRESULT CALLBACK LeftWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             HDC hdc = BeginPaint(hwnd, &ps);
             RECT rc;
             GetClientRect(hwnd, &rc);
-            HBRUSH clearBrush = CreateSolidBrush(RGB(0,0,0));
-            FillRect(hdc, &rc, clearBrush);
-            DeleteObject(clearBrush);
+            // Use cached brush instead of creating/destroying each time
+            if (!g_blackBrush) g_blackBrush = CreateSolidBrush(RGB(0,0,0));
+            FillRect(hdc, &rc, g_blackBrush);
 
             DrawLeftArrow(hdc, g_mouseY);
 
@@ -95,11 +99,11 @@ void DrawTopArrow(HDC hdc, int arrowX)
     pts[1].x = arrowX + ARROW_HEIGHT;  pts[1].y = 5;
     pts[2].x = arrowX + ARROW_HEIGHT/2; pts[2].y = 5 + ARROW_WIDTH;
 
-    HBRUSH hBrush = CreateSolidBrush(RGB(0, 0, 255));
-    HGDIOBJ oldBrush = SelectObject(hdc, hBrush);
+    // Use cached brush instead of creating/destroying each time
+    if (!g_blueBrush) g_blueBrush = CreateSolidBrush(RGB(0, 0, 255));
+    HGDIOBJ oldBrush = SelectObject(hdc, g_blueBrush);
     Polygon(hdc, pts, 3);
     SelectObject(hdc, oldBrush);
-    DeleteObject(hBrush);
 }
 
 LRESULT CALLBACK TopWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
@@ -113,7 +117,7 @@ LRESULT CALLBACK TopWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             virtX = GetSystemMetrics(SM_XVIRTUALSCREEN);
             virtW = GetSystemMetrics(SM_CXVIRTUALSCREEN);
             g_virtualX = virtX; // For global use
-             SetTimer(hwnd, 1, 33, NULL);
+             SetTimer(hwnd, 1, 50, NULL); // 20 FPS - reduced from 30 FPS for efficiency
         }
         break;
         case WM_TIMER:
@@ -123,7 +127,8 @@ LRESULT CALLBACK TopWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                 int arrowX = p.x - virtX - ARROW_HEIGHT / 2;
                 if (arrowX < 0) arrowX = 0;
                 if (arrowX > virtW - ARROW_HEIGHT) arrowX = virtW - ARROW_HEIGHT;
-                if (arrowX != g_mouseX) {
+                // Only update if position changed by at least 2 pixels to reduce redraws
+                if (abs(arrowX - g_mouseX) > 1) {
                     g_mouseX = arrowX;
                     InvalidateRect(hwnd, NULL, FALSE);
                 }
@@ -136,9 +141,9 @@ LRESULT CALLBACK TopWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             HDC hdc = BeginPaint(hwnd, &ps);
             RECT rc;
             GetClientRect(hwnd, &rc);
-            HBRUSH clearBrush = CreateSolidBrush(RGB(0,0,0));
-            FillRect(hdc, &rc, clearBrush);
-            DeleteObject(clearBrush);
+            // Use cached brush instead of creating/destroying each time
+            if (!g_blackBrush) g_blackBrush = CreateSolidBrush(RGB(0,0,0));
+            FillRect(hdc, &rc, g_blackBrush);
 
             DrawTopArrow(hdc, g_mouseX);
 
@@ -152,6 +157,13 @@ LRESULT CALLBACK TopWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             return DefWindowProc(hwnd, msg, wParam, lParam);
     }
     return 0;
+}
+
+// --- Cleanup Function ---
+void CleanupBrushes() {
+    if (g_redBrush) { DeleteObject(g_redBrush); g_redBrush = NULL; }
+    if (g_blueBrush) { DeleteObject(g_blueBrush); g_blueBrush = NULL; }
+    if (g_blackBrush) { DeleteObject(g_blackBrush); g_blackBrush = NULL; }
 }
 
 // --- System Tray Helper Functions ---
@@ -199,6 +211,7 @@ LRESULT CALLBACK TrayWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             break;
         case WM_DESTROY:
             RemoveTrayIcon();
+            CleanupBrushes();
             break;
         default:
             return DefWindowProc(hwnd, msg, wParam, lParam);

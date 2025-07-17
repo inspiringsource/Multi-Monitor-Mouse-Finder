@@ -12,6 +12,8 @@ A minimal Windows utility to help you **find your mouse cursor quickly and easil
 
 ## Why use this?
 
+After revising the code with Claude 4.0, the apps memory usage (according to Windows Task Manager) has been reduced from about 1.2 MB to as little as 0.5 MB—making it even more efficient and lightweight!
+
 Most built-in and third-party solutions either:
 
 - Aren’t effective when using multiple screens

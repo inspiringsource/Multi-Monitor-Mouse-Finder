@@ -47,8 +47,8 @@ Subtle overlay arrows at the screen edges always point to your cursor’s positi
 
 ## Download
 
-- [Installer (EXE)](https://github.com/inspiringsource/Cursor-track-find/releases/download/v1.0.0/Cursor.Track.and.find-Setup.exe)
-- [Source Code (GitHub)](https://github.com/inspiringsource/Cursor-track-find/archive/refs/tags/v1.0.0.zip)
+- [Installer (EXE)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/releases/download/v1.2.0/Multi-Monitor-Mouse-Finder-Setup1.2.0.exe)
+- [Source Code (GitHub)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/archive/refs/tags/v1.2.0.zip)
 
 ---
 

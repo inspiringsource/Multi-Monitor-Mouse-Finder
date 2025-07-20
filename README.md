@@ -5,11 +5,9 @@
 
 ## What is this?
 
-Just a little fun side project I made as a computer science student to help find the mouse cursor quickly—especially if you’re using multiple monitors. I actually use this myself on my PC, and thought, why not share it with others who might find it handy?
+Just a little fun side project I made to help find the mouse cursor quickly, especially if you’re using multiple monitors. I actually use this myself on my PC, and thought, why not share it with others who might find it handy?
 
 It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood (no surprises there!). After some rounds of improvements with AI tools like Claude 4.0 and others, I think the code got quite a bit leaner and better.
-
-If you want to try it, great! If not, no worries — this is just a small project I’m sharing for fun and convenience. Feel free to use it, improve it, or ignore it entirely. 🙂
 
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
@@ -31,7 +29,7 @@ Windows has a built-in option to locate your cursor by pressing CTRL, and Micros
 
 ## Known quirks
 
-* Overlay might hide behind fullscreen apps sometimes
+* Sometimes might hide behind fullscreen apps
 * It’s unsigned and new, so Windows might warn you when installing. Just choose "Run anyway" if you trust it.
 
 ## Download and source

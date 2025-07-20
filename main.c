@@ -6,9 +6,9 @@
 #define OVERLAY_WIDTH  30
 #define OVERLAY_HEIGHT 30
 
-const char *g_leftClass = "TrackNfindOverlayLeft";
-const char *g_topClass  = "TrackNfindOverlayTop";
-const char *g_trayClass = "TrackNfindTrayClass";
+const char *g_leftClass = "MMMFinderOverlayLeft";
+const char *g_topClass  = "MMMFinderOverlayTop";
+const char *g_trayClass = "MMMFinderTrayClass";
 
 #define WM_TRAYICON (WM_USER + 1)
 #define TRAY_ICON_ID 1
@@ -174,7 +174,8 @@ void AddTrayIcon(HINSTANCE hInstance, HWND hwnd) {
     nid.uFlags = NIF_ICON | NIF_MESSAGE | NIF_TIP;
     nid.uCallbackMessage = WM_TRAYICON;
     nid.hIcon = LoadIcon(NULL, IDI_APPLICATION); // Default Windows app icon (change if desired)
-    lstrcpy(nid.szTip, "TrackNfind (Right-click to exit)");
+    // Update tooltip to match the new application name
+    lstrcpy(nid.szTip, "Multi-Monitor-Mouse-Finder (Right-click to exit)");
     Shell_NotifyIcon(NIM_ADD, &nid);
 }
 

@@ -1,6 +1,6 @@
 # Multi-Monitor Mouse Finder
 
-* **Name Change:** This project, formerly known as "Cursor-track-find," has been renamed to **Multi-Monitor Mouse Finder**. This new name better reflects the app's purpose. The name change will be fully implemented with the next release 1.2.0.
+* **Name Change:** This project, formerly known as "Cursor-track-find," has been renamed to **Multi-Monitor Mouse Finder**. This new name better reflects the app's purpose.
 
 A minimal Windows utility to help you **find your mouse cursor quickly and easily—especially in multi-monitor setups**.
 
@@ -12,14 +12,14 @@ A minimal Windows utility to help you **find your mouse cursor quickly and easil
 
 ## Why use this?
 
-After revising the code with Claude 4.0, the apps memory usage (according to Windows Task Manager) has been reduced from about 1.2 MB to as little as 0.5 MB—making it even more efficient and lightweight!
+After revising the code with Claude 4.0, the apps memory usage (according to Windows Task Manager) has been reduced from about 1.2 MB to as little as 0.9 MB—making it even more efficient and lightweight!
 
 Most built-in and third-party solutions either:
 
 - Aren’t effective when using multiple screens
 - Or use more system resources than necessary
 
-**Cursor Find and Track** offers an ultra-lightweight, always-on approach:  
+**Multi-Monitor Mouse Finder** offers an ultra-lightweight, always-on approach:  
 Subtle overlay arrows at the screen edges always point to your cursor’s position—across all your monitors—so you can find it instantly and continuously.
 
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
@@ -47,8 +47,8 @@ Subtle overlay arrows at the screen edges always point to your cursor’s positi
 
 ## Download
 
-- [Installer (EXE)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/releases/download/v1.2.0/Multi-Monitor-Mouse-Finder-Setup1.2.0.exe)
-- [Source Code (GitHub)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/archive/refs/tags/v1.2.0.zip)
+- [Installer (EXE)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/releases/download/v1.2.1/Multi-Monitor-Mouse-Finder-Setup1.2.1.exe)
+- [Source Code (GitHub)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/archive/refs/tags/v1.2.1.zip)
 
 ---
 

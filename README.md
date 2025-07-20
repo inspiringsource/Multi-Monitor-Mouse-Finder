@@ -5,16 +5,16 @@
 
 ## What is this?
 
-Just a little fun side project I made to help find the mouse cursor quickly, especially if you’re using multiple monitors. I actually use this myself on my PC, and thought, why not share it with others who might find it handy?
+Just a little fun side project I made to help find the mouse cursor quickly, especially if you’re using multiple monitors. 
 
-It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood (no surprises there!). After some rounds of improvements with AI tools like Claude 4.0 and others, I think the code got quite a bit leaner and better.
+It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood. After some rounds of improvements with AI tools like Claude 4.0 and others, the code got quite a bit leaner and optimized.
 
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
 
 ## Why would you use this?
 
-* It’s super lightweight (memory usage dropped from about 1.2MB to under 1MB after AI optimizations!)
+* It’s super lightweight (memory usage dropped from about 1.2MB to under 1MB after optimizations!)
 * It works smoothly across multiple monitors
 * No flashy animations or big system resource drain—just subtle arrows on screen edges pointing to where your cursor is
 * No external dependencies — pure native Windows API in C

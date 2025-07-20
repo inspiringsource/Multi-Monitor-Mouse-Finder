@@ -1,60 +1,44 @@
 # Multi-Monitor Mouse Finder
 
-* **Name Change:** This project, formerly known as "Cursor-track-find," has been renamed to **Multi-Monitor Mouse Finder**. This new name better reflects the app's purpose.
+> *Formerly known as "Cursor-track-find" — renamed to better reflect what it does.*
 
-A minimal Windows utility to help you **find your mouse cursor quickly and easily—especially in multi-monitor setups**.
 
-> **Note:**  
-> Windows has a built-in way to find your mouse (like “Show location of pointer when pressing the CTRL key” in Mouse Settings).  
-> If you don’t mind higher system usage and want more visual effects, you can also try [Microsoft PowerToys – Mouse Utilities](https://docs.microsoft.com/powertoys/mouse-utilities) or [PowerToys on GitHub](https://github.com/microsoft/PowerToys).
+## What is this?
 
----
+Just a little fun side project I made as a computer science student to help find the mouse cursor quickly—especially if you’re using multiple monitors. I actually use this myself on my PC, and thought, why not share it with others who might find it handy?
 
-## Why use this?
+It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood (no surprises there!). After some rounds of improvements with AI tools like Claude 4.0 and others, I think the code got quite a bit leaner and better.
 
-After revising the code with Claude 4.0, the apps memory usage (according to Windows Task Manager) has been reduced from about 1.2 MB to as little as 0.9 MB—making it even more efficient and lightweight!
-
-Most built-in and third-party solutions either:
-
-- Aren’t effective when using multiple screens
-- Or use more system resources than necessary
-
-**Multi-Monitor Mouse Finder** offers an ultra-lightweight, always-on approach:  
-Subtle overlay arrows at the screen edges always point to your cursor’s position—across all your monitors—so you can find it instantly and continuously.
+If you want to try it, great! If not, no worries — this is just a small project I’m sharing for fun and convenience. Feel free to use it, improve it, or ignore it entirely. 🙂
 
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
----
 
-## Features
+## Why would you use this?
 
-- **Designed for multiple monitors:** Works seamlessly across all your screens
-- **Native C code:** No frameworks or dependencies—just pure Win32 API
-- **Extremely lightweight:** Minimal memory and CPU usage
-- **No extra resources:** Uses Windows defaults, no bundled graphics
-- **Background process:** No visible window, just a tray icon (standard Windows icon)
-- **Open source:** Code available for review or improvement
-- **Installer included:** Simple installation and autostart
+* It’s super lightweight (memory usage dropped from about 1.2MB to under 1MB after AI optimizations!)
+* It works smoothly across multiple monitors
+* No flashy animations or big system resource drain—just subtle arrows on screen edges pointing to where your cursor is
+* No external dependencies — pure native Windows API in C
+* Runs quietly in the background with a simple tray icon
+* Open source, so you can see all the code or tweak it yourself
 
 ---
 
-## Known Limitations
+## How it compares
 
-- In some cases, such as when using full-screen applications, the overlay may not remain on top.
-- Because this app is new and unsigned, Windows may warn you when installing. You can safely choose ‘More info’ and then ‘Run anyway.’
+Windows has a built-in option to locate your cursor by pressing CTRL, and Microsoft PowerToys offers fancy mouse utilities with more visual flair but also more resource use. I made this because I wanted something minimal, always-on, and reliable for multi-monitor setups without the bloat.
 
----
+## Known quirks
 
-## Download
+* Overlay might hide behind fullscreen apps sometimes
+* It’s unsigned and new, so Windows might warn you when installing. Just choose "Run anyway" if you trust it.
 
-- [Installer (EXE)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/releases/download/v1.2.1/Multi-Monitor-Mouse-Finder-Setup1.2.1.exe)
-- [Source Code (GitHub)](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/archive/refs/tags/v1.2.1.zip)
+## Download and source
 
----
+* [Installer EXE](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/releases/download/v1.2.1/Multi-Monitor-Mouse-Finder-Setup1.2.1.exe)
+* [Source Code on GitHub](https://github.com/inspiringsource/Multi-Monitor-Mouse-Finder/archive/refs/tags/v1.2.1.zip)
 
 ## License
 
-MIT License
-
----
-
+MIT License — do what you want with it!

@@ -11,6 +11,7 @@ It started as a simple experiment because I couldn’t find any good lightweight
 
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
+![Task Manager](demo/Task_Manager.jpg)
 
 ## Why would you use this?
 

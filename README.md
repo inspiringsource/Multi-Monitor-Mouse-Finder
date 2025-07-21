@@ -9,8 +9,10 @@ Just a little fun side project I made to help find the mouse cursor quickly, esp
 
 It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood. After some rounds of improvements with AI tools like Claude 4.0 and others, the code got quite a bit leaner and optimized.
 
+### Demo:
 ![Demo](demo/Cursor_Find_and_Track_demo.gif)
 
+### 🛠️ Task Manager:
 ![Task Manager](demo/Task_Manager.jpg)
 
 ## Why would you use this?

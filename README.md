@@ -5,9 +5,9 @@
 
 ## What is this?
 
-Just a little fun side project I made to help find the mouse cursor quickly, especially if you’re using multiple monitors. 
+Just a little fun side project I made to help find the mouse cursor quickly, especially when using multiple monitors. 
 
-It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood. After some rounds of improvements with AI tools like Claude 4.0 and others, the code got quite a bit leaner and optimized.
+It started as a simple experiment because I couldn’t find any good lightweight tools that worked well across multiple screens without hogging resources. Since it’s my own code, I know exactly what it does under the hood. After some rounds of improvements with AI, the code got quite a bit leaner and optimized.
 
 ### Demo
 
@@ -44,4 +44,4 @@ Windows has a built-in option to locate your cursor by pressing CTRL, and Micros
 
 ## License
 
-MIT License — do what you want with it!
+MIT License
